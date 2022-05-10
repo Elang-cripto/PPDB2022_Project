@@ -21,7 +21,7 @@
   <!-- /.login-logo -->
   <div class="container">
       <center>
-      <img src="{{ asset('vendor/dist/img/logo.gif') }}" alt="logo">
+      <img src="{{ asset('vendor/dist/img/logo.gif') }}" alt="logo" width="100px">
     </center>
     </div>
   <div class="card card-outline card-primary">

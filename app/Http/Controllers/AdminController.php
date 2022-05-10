@@ -246,6 +246,7 @@ class AdminController extends Controller
             'header' => 'Edit Data | PPDB Online',
             'lokasi' => 'formulir',
             'data' => Datasiswa::Find(Crypt::decryptString($id)),
+            'cari' => Asalsekolah::all(),
         ]);
     }
 

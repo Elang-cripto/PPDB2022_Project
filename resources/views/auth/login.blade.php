@@ -21,7 +21,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <img src="{{ asset('vendor/dist/img/logo.gif') }}" alt="logo">
+      <img src="{{ asset('vendor/dist/img/logo.gif') }}" alt="logo" width="100px">
       <h3><b>Selamat Datang</b></h3>
     </div>
     <div class="card-body">

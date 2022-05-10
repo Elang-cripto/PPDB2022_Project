@@ -586,9 +586,11 @@
                                 <div class="form-group row">
                                     <label for="skl_asal" class="col-sm-4 col-form-label">SEKOLAH ASAL</label>
                                     <div class="col-sm-8">
-                                        <select name="skl_asal" id="skl_asal" class="form-control select2" required>
-                                        <option value="{{ $data->skl_asal }}">{{ $data->skl_asal }}</option>
-                                        <option value="SDN SEJAHTERA">SDN SEJAHTERA</option>
+                                        <select name="skl_asal" class="form-control select2bs4" style="width: 100%;" required>
+                                            <option value="">-- Pilih --</option>
+                                            @foreach ($cari as $instansi)
+                                                <option value="{{ $instansi->lembaga }}">{{ $instansi->npsn.'-'.$instansi->lembaga }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>

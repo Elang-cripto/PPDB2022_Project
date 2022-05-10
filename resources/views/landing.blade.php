@@ -55,7 +55,7 @@
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="/admin_login">Get Started</a></li>
+          <li><a class="getstarted scrollto" href="/admin_login">Panitia</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -86,7 +86,7 @@
   <main id="main">
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
+    {{-- <section id="clients" class="clients section-bg">
       <div class="container">
 
         <div class="row" data-aos="zoom-in">
@@ -118,7 +118,7 @@
         </div>
 
       </div>
-    </section><!-- End Cliens Section -->
+    </section><!-- End Cliens Section --> --}}
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
