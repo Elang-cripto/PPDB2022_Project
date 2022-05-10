@@ -47,6 +47,7 @@ Route::middleware(['auth', 'akses:admin'])->group(function () {
     Route::get('/admin/del_instansi/{id}', [AdminController::class, 'del_instansi'])->name('del_instansi');
     Route::get('/admin/setting', [AdminController::class, 'setting'])->name('setting');
     Route::post('/admin/upd_setting/{id}', [AdminController::class, 'upd_setting'])->name('upd_setting');
+    Route::get('/admin/posting', [AdminController::class, 'posting'])->name('posting');
     Route::get('/admin/edit/{id}', [AdminController::class, 'edit'])->name('edit');
     Route::post('/admin/update/{id}', [AdminController::class, 'update'])->name('update');
     Route::get('/admin/delete/{id}', [AdminController::class, 'delete'])->name('delete');

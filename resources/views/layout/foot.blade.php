@@ -65,6 +65,8 @@
 <script src="{{ asset('vendor') }}/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="{{ asset('vendor') }}/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="{{ asset('vendor') }}/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- Summernote -->
+<script src="{{ asset('vendor') }}/plugins/summernote/summernote-bs4.min.js"></script>
 <script>
   $(function () {
     $("#example1").DataTable({
@@ -109,6 +111,20 @@
   $(function () {
   bsCustomFileInput.init();
 }); 
+</script>
+<script>
+  $(function () {
+    $('#summernote').summernote()
+  });
+  $(function () {
+    $('#summernote1').summernote()
+  });
+  $(function () {
+    $('#summernote2').summernote()
+  });
+  $(function () {
+    $('#summernote3').summernote()
+  });
 </script>
 </body>
 </html>

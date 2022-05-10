@@ -7,6 +7,7 @@ use App\Models\Appsetting;
 use App\Models\User;
 use App\Models\Datasiswa;
 use App\Models\Asalsekolah;
+use App\Models\Postland;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -238,6 +239,15 @@ class AdminController extends Controller
 
         Alert::success('Alhamdulillah', 'Update data aplikasi berhasil');
         return back();
+    }
+
+    public function posting()
+    {
+        return view('admin/post', [
+            'header' => 'Landing Post | PPDB Online',
+            'lokasi' => 'posting',
+            'data' => Postland::all(),
+        ]);
     }
 
     public function edit($id)

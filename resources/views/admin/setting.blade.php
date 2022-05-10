@@ -37,16 +37,24 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nama Lembaga</label>
+                    <label for="app_nm_lembaga">Nama Lembaga</label>
                     <input type="text" name="app_nm_lembaga" class="form-control" value="{{ $global->app_nm_lembaga }}" placeholder="Nama Lembaga">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Alamat Lembaga</label>
+                    <label for="app_almt_lembaga">Alamat Lembaga</label>
                     <input type="text" name="app_almt_lembaga" class="form-control" value="{{ $global->app_almt_lembaga }}" placeholder="Alamat Lembaga">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Telp Lembaga</label>
+                    <label for="app_telp_lembaga">Telp Lembaga</label>
                     <input type="text" name="app_telp_lembaga" class="form-control" value="{{ $global->app_telp_lembaga }}" placeholder="0336 xxxxxx">
+                  </div>
+                  <div class="form-group">
+                    <label for="app_mail_lembaga">Email Lembaga</label>
+                    <input type="text" name="app_mail_lembaga" class="form-control" value="{{ $global->app_mail_lembaga }}" placeholder="email aktif">
+                  </div>
+                  <div class="form-group">
+                    <label for="app_gps_lembaga">GPS Lembaga</label>
+                    <textarea name="app_gps_lembaga" class="form-control" rows="8" placeholder="Enter ...">{{ $global->app_gps_lembaga }}</textarea>
                   </div>
                 </div>
                 <div class="col-md-6">

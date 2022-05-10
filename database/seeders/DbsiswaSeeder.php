@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Appsetting;
 use App\Models\Asalsekolah;
 use App\Models\Datasiswa;
+use App\Models\Postland;
 use Illuminate\Database\Seeder;
 
 class DbsiswaSeeder extends Seeder
@@ -103,9 +104,29 @@ class DbsiswaSeeder extends Seeder
             'app_nm_lembaga' => 'MTsN Sejahtera',
             'app_almt_lembaga' => 'Jl. Kebaikan',
             'app_telp_lembaga' => '0336-342244',
+            'app_mail_lembaga' => 'admin@gmail.com',
             'app_nmks_lembaga' => 'Tony Stark',
             'app_npsn_lembaga' => '99124568',
+            'app_gps_lembaga' => '',
+            'app_link_fb' => '',
+            'app_link_yt' => '',
+            'app_link_ins' => '',
             'app_tahun' => '2022',
+            'created_at' => '2022-05-05 03:29:50',
+            'updated_at' => '2022-05-05 03:29:50',
+        ]);
+
+        Postland::create([
+            'judul_utama' => 'Better Solutions For Your Education',
+            'judul_sub' => 'Panitia Penerimaan Peserta Didik Baru MTSN 10 Jember 2022-2023',
+            'img_utama' => 'hero-img.png',
+            'about_us' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'judul_post1' => 'Judul Post 1',
+            'isi_post1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit',
+            'img_post1' => 'why-us.png',
+            'judul_post2' => 'Voluptatem dignissimos provident quasi corporis voluptates',
+            'isi_post2' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            'img_post2' => 'skills.png',
             'created_at' => '2022-05-05 03:29:50',
             'updated_at' => '2022-05-05 03:29:50',
         ]);

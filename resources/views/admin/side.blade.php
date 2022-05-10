@@ -72,8 +72,8 @@
             </a>
           </li>
   
-          <li class="nav-item {{ ($lokasi === 'manage'||$lokasi === 'instansi'||$lokasi === 'setting') ? 'menu-open' :'' }}">
-            <a href="#" class="nav-link {{ ($lokasi === 'manage'||$lokasi === 'instansi'||$lokasi === 'setting') ? 'active' :'' }}">
+          <li class="nav-item {{ ($lokasi === 'manage'||$lokasi === 'instansi'||$lokasi === 'setting'||$lokasi === 'posting') ? 'menu-open' :'' }}">
+            <a href="#" class="nav-link {{ ($lokasi === 'manage'||$lokasi === 'instansi'||$lokasi === 'setting'||$lokasi === 'posting') ? 'active' :'' }}">
               <i class="nav-icon fas fa-tools"></i>
               <p>
                 Admin Menu
@@ -97,6 +97,12 @@
                 <a href="/admin/setting" class="nav-link {{ ($lokasi === 'setting') ? 'active' :'' }}">
                   <i class="nav-icon fas fa-cog"></i>
                   <p>Setting</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/posting" class="nav-link {{ ($lokasi === 'posting') ? 'active' :'' }}">
+                  <i class="nav-icon fas fa-newspaper"></i>
+                  <p>Posting</p>
                 </a>
               </li>
             </ul>

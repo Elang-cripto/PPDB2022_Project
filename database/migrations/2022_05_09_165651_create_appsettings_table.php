@@ -18,8 +18,13 @@ class CreateAppsettingsTable extends Migration
             $table->string('app_nm_lembaga')->nullable();
             $table->string('app_almt_lembaga')->nullable();
             $table->string('app_telp_lembaga')->nullable();
+            $table->string('app_mail_lembaga')->nullable();
             $table->string('app_nmks_lembaga')->nullable();
             $table->string('app_npsn_lembaga')->nullable();
+            $table->text('app_gps_lembaga')->nullable();
+            $table->string('app_link_fb')->nullable();
+            $table->string('app_link_yt')->nullable();
+            $table->string('app_link_ins')->nullable();
             $table->string('app_tahun')->nullable();
             $table->timestamps();
         });

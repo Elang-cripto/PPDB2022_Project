@@ -12,13 +12,13 @@ class AuthController extends Controller
 {
     public function index()
     {
-        try {
-            DB::connection()->getPdo;
+        // try {
+        //     DB::connection()->getPdo();
 
-            return view('auth.login');
-        } catch (\Exception $e) {
-            return redirect('lock');
-        }
+        return view('auth.login');
+        // } catch (\Exception $e) {
+        //     return redirect('lock');
+        // }
     }
 
     public function lock()

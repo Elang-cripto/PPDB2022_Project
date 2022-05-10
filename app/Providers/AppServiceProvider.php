@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Appsetting;
+use App\Models\Postland;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,5 +27,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         View::share('global', Appsetting::Find(1));
+        View::share('global2', Postland::Find(1));
     }
 }
